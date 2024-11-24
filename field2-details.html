@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complexe El Oulja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container">
+      <h1>Stadium Booking</h1>
+      <p>Complexe El Oulja</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="stadiums.html">Stadiums</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Field Details Section -->
+  <section class="field-details">
+    <div class="container">
+      <h2>Complexe El Oulja</h2>
+      <div class="field-image">
+        <img src="/Complexe El Oulja.jpg" alt="Soccer Field 2">
+      </div>
+
+      <div class="field-info">
+        <h3>About the Field</h3>
+        <p>Situé dans la zone paisible d'El Oulja à Rabat, ce terrain de football 5v5 est idéal pour les amateurs de sport. Avec des dimensions adaptées et un revêtement en gazon synthétique, il offre un confort optimal pour des parties compétitives ou décontractées. Parfait pour des équipes locales ou des visiteurs!</p>
+        <h3>Adresse</h3>
+        <p> Route d’El Oulja, à 5 minutes de l'avenue Annakhil.</p>
+        <h3>Field Features:</h3>
+        <ul>
+          <li>Size: 5v5 (full field)</li>
+          <li>Aire de repos pour les spectateurs.</li>
+          <li>Cafétéria à proximité.</li>
+          <li>Accès facile par transports en commun.</li>
+        </ul>
+
+        <h3>Availability</h3>
+        <div class="availability">
+            <label for="date">Select Date:</label>
+            <!-- Add the "min" attribute with today's date -->
+            <input type="date" id="date" name="date" min="" required>
+            
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+              <option value="09:00">09:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 PM</option>
+              <option value="16:00">16:00 PM</option>
+              <option value="17:00">17:00 PM</option>
+              <option value="18:00">18:00 PM</option>
+            </select>
+            
+            <button type="submit">Check Availability</button>
+        
+        <h3>Booking</h3>
+        <p>Once you select your date and time, you can proceed to book the field for your match. The price for booking is 80 MAD.</p>
+        <button class="book-now">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Stadium Booking | All Rights Reserved</p>
+  </footer>
+  <script>
+    // Set today's date as the minimum date for the input field
+    document.getElementById("date").setAttribute("min", new Date().toISOString().split("T")[0]);
+  </script>
+</body>
+</html>

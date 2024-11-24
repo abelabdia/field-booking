@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soccer Field Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>MAL3AB ONLINE</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fields.html">Fields</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h2>Book Your Soccer Field in Minutes!</h2>
+        <form>
+          <input type="text" placeholder="Enter city or field name">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="container">
+      <h2>Top Soccer Fields</h2>
+      <div class="card-grid">
+        <div class="card" onclick="goToField1Page()">
+          <img src="/Stade al AMAL.jpg" alt="amal" class="card-image">
+          <div class="card-info">
+            <h3>Soccer Paradise</h3>
+            <p>City: Casablanca</p>
+            <p>Price: 90 MAD / Hour</p>
+            <a href="field1-details.html" class="btn">View Details</a>
+          </div>
+        </div>
+        <div class="card" onclick="goToField2Page()">
+          <img src="/Complexe El Oulja.jpg" alt="Oulja" class="card-image">
+          <div class="card-info">
+            <h3>Complexe El Oulja</h3>
+            <p>City: Rabat</p>
+            <p>Price: 80 MAD/ Hour</p>
+            <a href="field2-details.html" class="btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mal3ab-online. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
